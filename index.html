@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Kanban</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <div class="container">
+ <div class="columna">
+    <h2 class="titulo">Por hacer</h2>
+    <div class="formulario">
+        <label for ="nombreTarea" class="indicacion">Nombre de la tarea</label>
+        <input id="nombreTarea" type="text" class="input" name="taskName" value="Tarea" placeholder="Nomre de la tarea" required maxlength="50">
+        <label for="categoriaTarea" class="indicacion">Categoría</label>
+        <input id="categoriaTarea" type="text" class="input" name="taskCategory" value="Categoría" placeholder="Categoría de la tarea" maxlength="50" required>
+        <label for="esUrgente" class="indicacion">¿Es una tarea urgente?</label>
+        <input id="esUrgente" type="checkbox" class="checkbox" name="isUrgent" required>
+        <button id="addTask" class="agregarTarea">Agregar</button>
+    </div>
+ </div>
+ <div class="columna">
+    <h2 class="titulo">Haciendo</h2>
+</div>
+ <div class="columna">
+    <h2 class="titulo">terminadas</h2>
+ </div>
+</div>  
+
+</body>
+</html>

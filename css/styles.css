@@ -1,0 +1,32 @@
+* {
+    font-family: "Roboto",sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.columna {
+    flex: 1;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100vh;
+}
+
+.formulario {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
