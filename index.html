@@ -12,28 +12,34 @@
 <body>
 
  <div class="container">
- <div class="columna">
+ <div id="toDoColumn" class="columna">
     <h2 class="titulo">Por hacer</h2>
     <div class="formulario">
         <label for ="nombreTarea" class="indicacion">Nombre de la tarea</label>
-        <input id="nombreTarea" type="text" class="input" name="taskName" value="Tarea" placeholder="Nomre de la tarea" required maxlength="50">
+        <input id="nombreTarea" type="text" class="input" name="taskName" placeholder="Nomre de la tarea" required maxlength="50">
         <label for="categoriaTarea" class="indicacion">Categoría</label>
-        <input id="categoriaTarea" type="text" class="input" name="taskCategory" value="Categoría" placeholder="Categoría de la tarea" maxlength="50" required>
+        <input id="categoriaTarea" type="text" class="input" name="taskCategory" placeholder="Categoría de la tarea" maxlength="50" required>
         <label for="esUrgente" class="indicacion">¿Es una tarea urgente?</label>
         <input id="esUrgente" type="checkbox" class="checkbox" name="isUrgent" required>
         <button id="addTask" class="agregarTarea">Agregar</button>
     </div>
 
     <div class="taskList">
-        <ul id="toDo"></ul>
+        <ul class ="listaTareas" id="toDo"></ul>
     </div>
 
  </div>
- <div class="columna">
+ <div id="doingColumn" class="columna">
     <h2 class="titulo">Haciendo</h2>
+    <div class="taskList">
+        <ul class ="listaTareas" id="doingList"></ul>
+    </div>
 </div>
- <div class="columna">
+ <div id="doneColumn" class="columna">
     <h2 class="titulo">terminadas</h2>
+    <div class="taskList">
+        <ul class ="listaTareas" id="doneList"></ul>
+    </div>
  </div>
 </div>  
 

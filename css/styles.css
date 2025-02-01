@@ -1,7 +1,9 @@
 * {
     font-family: "Roboto",sans-serif;
 }
-
+body {
+    background-color: #E17564;
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -12,6 +14,7 @@
 }
 
 .columna {
+    color: #5a172b;
     flex: 1;
     margin: 0 10px;
     justify-content: center;
@@ -20,6 +23,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     height: auto;
+    background-color: #e59e93;
 }
 
 .formulario {
@@ -28,5 +32,90 @@
     flex-direction: column;
     padding: 20px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #c75564;
+    border-color: #be3144;
+}
+
+.agregarTarea{
+    background-color: #872341;
+    border-color: #be3144;
+    color:white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.agregarTarea:hover{
+    background-color: #55161e;
+    transition: 0.5s;
+}
+
+.input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.indicacion {
+    margin-bottom: 10px;
+    color: #5a172b;
+    padding: 5px;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.tarjeta {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #c75564;
+    border-color: #be3144;
+    text-align: center;
+    margin:5px;
+}
+
+.listaTareas {  
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #E17564;
+    color: #46151b;
+}
+
+.urgente {  
+    background-color: #be3144;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.no-urgente {  
+    background-color: #4b8723;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card-text {
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #dd8c80;
+    color: #5a172b;
     border-radius: 5px;
 }
