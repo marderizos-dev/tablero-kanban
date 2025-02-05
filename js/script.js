@@ -101,6 +101,7 @@ addTask.addEventListener("click", function() {
 })
 
 
+
 function añadirTarjeta(taskName, taskCategory, taskUrgent) {
     let taskUrgentText;
     let taskUrgentClass;
@@ -117,12 +118,24 @@ function añadirTarjeta(taskName, taskCategory, taskUrgent) {
     toDo.innerHTML += `
     <li>
     <div id="card${cardNumber}" class="tarjeta" draggable="true">
+        <span id="close-button${cardNumber}" class="close-button">&times;</span>
         <h5 class="card-title">${taskName}</h5>
         <p class="card-text">${taskCategory}</p>
         <p class="${taskUrgentClass}">${taskUrgentText}</p>
     </div></li>
     `;
 }
+
+document.addEventListener("click", function(event) {
+    if (event.target.classList.contains("close-button")) {
+        const cardId = event.target.id.replace("close-button", "card");
+        const card = document.getElementById(cardId);
+        if (card) {
+            card.remove();
+        }
+    }
+});
+
 
     function limpiarCampos() {
         document.getElementById("nombreTarea").value = "";
